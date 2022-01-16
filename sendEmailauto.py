@@ -10,13 +10,12 @@ def enviar_email():
     <p>Segue meu primeiro email automatico</p>
     <p>faturamento do mes foi R${faturamento}</p>
     <p>abs</p>
-    <p>Jakson</p>
     """
 
     msg = email.message.Message()
     msg['Subject'] = "Email automatico"
-    msg['From'] = 'jaksoncunhadesouza@gmail.com'
-    msg['To'] = 'jaksoncunha1@gmail.com'
+    msg['From'] = 'email'
+    msg['To'] = 'email'
     password = senha
     msg.add_header('Content-Type', 'text/html')
     msg.set_payload(corpo_email)
